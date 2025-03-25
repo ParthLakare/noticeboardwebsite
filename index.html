@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Notice Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Notice Board</h1>
+            <p>Stay updated with the latest announcements</p>
+        </header>
+        <div class="notice-form">
+            <textarea id="noticeInput" placeholder="Write your notice here..." maxlength="500"></textarea>
+            <div class="form-actions">
+                <span id="charCount">0/500</span>
+                <button onclick="addNotice()">Post Notice</button>
+            </div>
+        </div>
+        <div id="noticeList" class="notice-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
